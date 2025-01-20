@@ -15,6 +15,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
         }
         nav {
             background: #333;
@@ -29,17 +30,17 @@
         }
         .container {
             max-width: 900px;
+            width: 100%;
             margin: auto;
             padding: 10px;
             flex-grow: 1;
         }
         .resume img {
             width: 100%;
-            height: auto; /* Ensures the aspect ratio is maintained */
-            max-width: 600px; /* Maximum size on larger screens */
-            border-radius: 5px;
-            margin: 10px 0;
+            height: auto; /* Maintains aspect ratio */
+            max-width: 100%; /* Ensures it never exceeds the container width */
             display: block;
+            margin: auto; /* Centers the image */
         }
         .download-btn {
             display: inline-block;
@@ -60,6 +61,7 @@
             padding: 10px;
             margin-top: 10px;
             text-align: center;
+            width: 100%;
         }
         .footer a {
             color: white;
@@ -70,7 +72,7 @@
                 padding: 10px;
             }
             .resume img {
-                max-width: 100%; /* Full width on small screens */
+                max-width: 100%; /* Ensures it does not exceed the screen width */
             }
             .download-btn {
                 font-size: 16px;
@@ -99,4 +101,3 @@
     </div>
 </body>
 </html>
-
