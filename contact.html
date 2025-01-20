@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Farley - Actress</title>
+    <title>Grace Farley - Contact</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,45 +30,18 @@
         .container {
             max-width: 800px;
             margin: auto;
-            padding: 10px;
+            padding: 20px;
             flex-grow: 1;
         }
-        .hero {
-            background-image: url('grace.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 13vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: black;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-            flex-direction: column;
-            padding: 2px 0;
+        .contact-info {
+            font-size: 1.5em;
+            margin: 20px 0;
         }
-        .hero h1 {
-            font-size: 2em;
-            margin-bottom: 3px;
-        }
-        .hero p {
-            margin-top: 3px;
-            font-size: 1em;
-        }
-        .home-image {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            margin: 5px 0;
-        }
-        .resume img {
-            width: 100%;
-            max-width: 500px;
-        }
-        .gallery img, .gallery video {
-            width: 100%;
-            max-width: 350px;
-            margin: 3px;
-            border-radius: 5px;
+        .contact-info strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #007BFF;
         }
         .footer {
             background: #222;
@@ -82,18 +55,8 @@
             text-decoration: none;
         }
         @media (max-width: 600px) {
-            .hero {
-                height: 50vh;
-                padding: 5px 0;
-            }
-            .hero h1 {
-                font-size: 1.5em;
-            }
             .container {
-                padding: 5px;
-            }
-            .home-image {
-                max-width: 250px;
+                padding: 10px;
             }
         }
     </style>
@@ -106,15 +69,16 @@
         <a href="contact.html">Contact</a>
     </nav>
     
-    <div class="hero">
-        <h1>Grace Farley</h1>
-        <p>Actress & Performer</p>
-    </div>
-
     <div class="container">
-        <h2>About Me</h2>
-        <img src="face.png" alt="Grace Farley" class="home-image">
-        <p>Hi! I'm Grace... example text.</p>
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <strong>Phone:</strong>
+            <p>(650) 793-3957</p>
+        </div>
+        <div class="contact-info">
+            <strong>Email:</strong>
+            <p><a href="mailto:gracefarley12@gmail.com">gracefarley12@gmail.com</a></p>
+        </div>
     </div>
 
     <div class="footer">
@@ -122,4 +86,3 @@
     </div>
 </body>
 </html>
-

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Farley - Actress</title>
+    <title>Grace Farley - Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,41 +33,15 @@
             padding: 10px;
             flex-grow: 1;
         }
-        .hero {
-            background-image: url('grace.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 13vh;
+        .gallery {
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
             justify-content: center;
-            color: black;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-            flex-direction: column;
-            padding: 2px 0;
-        }
-        .hero h1 {
-            font-size: 2em;
-            margin-bottom: 3px;
-        }
-        .hero p {
-            margin-top: 3px;
-            font-size: 1em;
-        }
-        .home-image {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 10px;
-            margin: 5px 0;
-        }
-        .resume img {
-            width: 100%;
-            max-width: 500px;
+            gap: 10px;
         }
         .gallery img, .gallery video {
             width: 100%;
             max-width: 350px;
-            margin: 3px;
             border-radius: 5px;
         }
         .footer {
@@ -82,18 +56,11 @@
             text-decoration: none;
         }
         @media (max-width: 600px) {
-            .hero {
-                height: 50vh;
-                padding: 5px 0;
-            }
-            .hero h1 {
-                font-size: 1.5em;
-            }
             .container {
                 padding: 5px;
             }
-            .home-image {
-                max-width: 250px;
+            .gallery img, .gallery video {
+                max-width: 100%;
             }
         }
     </style>
@@ -106,15 +73,26 @@
         <a href="contact.html">Contact</a>
     </nav>
     
-    <div class="hero">
-        <h1>Grace Farley</h1>
-        <p>Actress & Performer</p>
-    </div>
-
     <div class="container">
-        <h2>About Me</h2>
-        <img src="face.png" alt="Grace Farley" class="home-image">
-        <p>Hi! I'm Grace... example text.</p>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Gallery Image 1">
+            <img src="image2.jpg" alt="Gallery Image 2">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img src="image3.jpg" alt="Gallery Image 3">
+            <img src="image4.jpg" alt="Gallery Image 4">
+            <video controls>
+                <source src="video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </div>
 
     <div class="footer">
@@ -122,4 +100,3 @@
     </div>
 </body>
 </html>
-
