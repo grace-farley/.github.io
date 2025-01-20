@@ -28,20 +28,22 @@
             font-weight: bold;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
             padding: 10px;
             flex-grow: 1;
         }
         .resume img {
             width: 100%;
-            max-width: 600px;
+            height: auto; /* Ensures the aspect ratio is maintained */
+            max-width: 600px; /* Maximum size on larger screens */
             border-radius: 5px;
             margin: 10px 0;
+            display: block;
         }
         .download-btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 20px;
             font-size: 18px;
             color: white;
             background-color: #007BFF;
@@ -65,10 +67,14 @@
         }
         @media (max-width: 600px) {
             .container {
-                padding: 5px;
+                padding: 10px;
             }
             .resume img {
-                max-width: 100%;
+                max-width: 100%; /* Full width on small screens */
+            }
+            .download-btn {
+                font-size: 16px;
+                padding: 10px 15px;
             }
         }
     </style>
@@ -93,3 +99,4 @@
     </div>
 </body>
 </html>
+
